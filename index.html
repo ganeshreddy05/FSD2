@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Company Directory Portal</h1>
+        
+        <!-- Employee Registration Form -->
+        <div class="form-container">
+            <h2>Employee Registration Form</h2>
+            <form id="employee-form">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="IT">IT</option>
+                    <option value="HR">HR</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+                
+                <label for="employeeId">Employee ID:</label>
+                <input type="text" id="employeeId" name="employeeId" required>
+                
+                <label for="profilePicture">Profile Picture URL:</label>
+                <input type="url" id="profilePicture" name="profilePicture">
+                
+                <button type="submit">Register Employee</button>
+            </form>
+        </div>
+        
+        <!-- Employee List -->
+        <div class="employee-list">
+            <h3>Employee List</h3>
+            <ul>
+                <li>1. John Doe - john@example.com</li>
+                <li>2. Jane Smith - jane@example.com</li>
+            </ul>
+        </div>
+        
+        <!-- Employee Details -->
+        <div class="employee-details">
+            <h3>Employee Details</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <div class="labeling">
+                        <h4>Name</h4>
+                        <h4>Employee ID</h4>
+                        <h4>Department</h4>
+                        <h4>Profile Picture</h4>
+                        
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>12345</td>
+                        <td>IT</td>
+                        <td><img src="https://via.placeholder.com/50" alt="John Doe's Picture"></td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>67890</td>
+                        <td>HR</td>
+                        <td><img src="https://via.placeholder.com/50" alt="Jane Smith's Picture"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Company Location -->
+        <div class="map-container">
+            <h3>Company Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.1222958976243!2d-122.08424968425825!3d37.42206527982313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba4b1f1bb557%3A0xa86c0f2fa0ff3f!2sGoogleplex!5e0!3m2!1sen!2sus!4v1630511123940!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</body>
+</html>
